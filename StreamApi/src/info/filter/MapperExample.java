@@ -26,7 +26,7 @@ public class MapperExample {
 		
 		System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		
-		List<user> list = allNames.stream().filter(nam->nam.equals("sandeep")).map(n-> new user("sandeep",27)).collect(Collectors.toList());
+		List<user> list = allNames.stream().filter(nam->nam.equals("sandeep")).map(n-> new user("sandeep",27)).sorted().collect(Collectors.toList());
 		list.forEach(System.out::println);
 	}
 
